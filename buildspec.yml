@@ -1,0 +1,23 @@
+version: 0.2
+
+env:
+  variables:
+    JAVA_HOME: "/var/www/html"
+
+phases:
+  install:
+    commands:
+      - apt-get update -y
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - 
+  discard-paths: yes
