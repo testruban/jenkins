@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    JAVA_HOME: "/var/www/html"
+    codevu : "/var/www/html"
 
 phases:
   install:
@@ -17,4 +17,3 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-  discard-paths: yes
